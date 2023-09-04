@@ -4,8 +4,8 @@ namespace ShipSaasReducer\Tests\Unit\Helpers;
 
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
-use PHPUnit\Framework\TestCase;
 use ShipSaasReducer\Helpers\Helper;
+use ShipSaasReducer\Tests\TestCase;
 use stdClass;
 
 class HelperTest extends TestCase

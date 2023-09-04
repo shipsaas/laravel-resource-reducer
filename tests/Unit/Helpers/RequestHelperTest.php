@@ -3,8 +3,8 @@
 namespace ShipSaasReducer\Tests\Unit\Helpers;
 
 use Illuminate\Http\Request;
-use PHPUnit\Framework\TestCase;
 use ShipSaasReducer\Helpers\RequestHelper;
+use ShipSaasReducer\Tests\TestCase;
 
 class RequestHelperTest extends TestCase
 {
