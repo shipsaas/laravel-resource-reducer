@@ -2,6 +2,9 @@
 
 namespace ShipSaasReducer\Json\Traits;
 
+/**
+ * @internal do not use this in userland
+ */
 trait HasRelation
 {
     protected string $relationName;
@@ -30,6 +33,9 @@ trait HasRelation
         return $this->shouldEagerLoad;
     }
 
+    /**
+     * @internal do not use this in userland
+     */
     public function disableEagerLoad(): self
     {
         $this->shouldEagerLoad = false;

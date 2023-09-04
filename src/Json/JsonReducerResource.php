@@ -143,6 +143,7 @@ abstract class JsonReducerResource extends JsonResource
             return $retrieverHandler
                 ->setRelationName($retriever->relationName)
                 ->only($wantedFields)
+                ->disableEagerLoad()
                 ->toArray(RequestHelper::getCurrentRequest());
         }
 

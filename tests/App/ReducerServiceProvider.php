@@ -2,7 +2,9 @@
 
 namespace ShipSaasReducer\Tests\App;
 
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
+use ShipSaasReducer\Tests\App\Models\User;
 
 class ReducerServiceProvider extends ServiceProvider
 {
