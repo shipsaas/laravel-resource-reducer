@@ -1,5 +1,9 @@
 # Laravel Resource Reducer from ShipSaaS
 
+[![Build & Test (PHP 8.2 + Laravel 10+)](https://github.com/shipsaas/laravel-resource-reducer/actions/workflows/build.yml/badge.svg)](https://github.com/shipsaas/laravel-resource-reducer/actions/workflows/build.yml)
+[![codecov](https://codecov.io/gh/shipsaas/laravel-resource-reducer/graph/badge.svg?token=alt8CdVUg1)](https://codecov.io/gh/shipsaas/laravel-resource-reducer)
+
+
 Ever thinking about how to speed up your application by optimizing the response? 
 
 Laravel Resource Reducer helps you to optimize every API request by:
