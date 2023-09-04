@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\DB;
 use ShipSaasReducer\Tests\App\Models\User;
 use ShipSaasReducer\Tests\TestCase;
 
-class UserControllerTest extends TestCase
+class UserControllerShowTest extends TestCase
 {
     public function testShowReturnsSingleUserFirstLevel()
     {

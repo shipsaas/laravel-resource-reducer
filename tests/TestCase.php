@@ -99,15 +99,20 @@ abstract class TestCase extends BaseTestCase
                 'role_id' => $adminRole->id,
             ]);
 
+            $adminUser->articles()->createMany([
+                ['title' => 'The Laravel Resource Reducer', 'content' => 'is super awesome'],
+                ['title' => 'Please start', 'content' => 'to support us :wink: :love:'],
+            ]);
+
             $normalUser = User::create([
                 'name' => 'User',
                 'email' => 'user@shipsaas.tech',
                 'role_id' => $userRole->id,
             ]);
 
-            $adminUser->articles()->createMany([
-                ['title' => 'The Laravel Resource Reducer', 'content' => 'is super awesome'],
-                ['title' => 'Please start', 'content' => 'to support us :wink: :love:'],
+            $inactivatedUser = User::create([
+                'name' => 'Inactivated User',
+                'email' => 'baduser@shipsaas.tech',
             ]);
         });
     }

@@ -13,7 +13,7 @@ class UserController extends Controller
     public function index(Request $request): JsonResponse
     {
         $users = $request->has('pagination')
-            ? User::paginate(10)
+            ? User::paginate(2)
             : User::all();
 
         return UserResource::collection($users)->response();

@@ -12,6 +12,7 @@ trait Assertions
 {
     protected function withDbQueryLogEnabled(callable $handler): array
     {
+        DB::flushQueryLog();
         DB::enableQueryLog();
 
         call_user_func($handler);

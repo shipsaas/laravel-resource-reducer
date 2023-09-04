@@ -5,6 +5,8 @@ namespace ShipSaasReducer\Json;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Illuminate\Pagination\AbstractCursorPaginator;
+use Illuminate\Pagination\AbstractPaginator;
 use Illuminate\Support\Collection;
 use ShipSaasReducer\Helpers\Helper;
 use ShipSaasReducer\Json\Traits\HasRelation;
@@ -65,6 +67,10 @@ class AnonymousResourceReducerCollection extends AnonymousResourceCollection
 
     public function toResponse($request)
     {
+        if ($this->resource instanceof AbstractPaginator || $this->resource instanceof AbstractCursorPaginator) {
+            return $this->preparePaginatedResponse($request);
+        }
+
         return (new ReducerResponse($this))->toResponse($request);
     }
 }

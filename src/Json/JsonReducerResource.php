@@ -127,7 +127,7 @@ abstract class JsonReducerResource extends JsonResource
             }
 
             $relationName = $retriever->getRelationName();
-            if (!$this->resource->relationLoaded($relationName)) {
+            if (!$this->resource->relationLoaded($relationName) || $this->resource->{$relationName} === null) {
                 return null;
             }
 
