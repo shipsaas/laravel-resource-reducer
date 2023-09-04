@@ -18,5 +18,8 @@
     <include>
       <directory suffix=".php">./src</directory>
     </include>
+    <exclude>
+      <file>./src/ReducerServiceProvider.php</file>
+    </exclude>
   </source>
 </phpunit>
