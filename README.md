@@ -21,6 +21,11 @@ in our context.
 - Laravel 10+
 - PHP 8.2+
 
+### Compatibility
+- Single Model ✅
+- Collection of Models ✅
+- Pagination ✅ (🟡 you need to use `Resource::collection` for the time being)
+
 ## Installation
 
 ```bash
@@ -32,7 +37,7 @@ composer require shipsaas/laravel-resource-reducer
 Laravel Resource Reducer is the SuperSet from Laravel Resource, thus we can use the Reducer just like 
 the way we use normal Resource.
 
-For detailed documentation, chec
+For detailed documentation & best practices, check out: [Reducer Documentation](https://reducer.shipsaas.tech)
 
 ### Resource Class
 
