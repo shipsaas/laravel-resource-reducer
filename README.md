@@ -4,7 +4,7 @@
 [![codecov](https://codecov.io/gh/shipsaas/laravel-resource-reducer/graph/badge.svg?token=alt8CdVUg1)](https://codecov.io/gh/shipsaas/laravel-resource-reducer)
 
 
-Ever thinking about how to speed up your application by optimizing the response? 
+Ever thinking about how to speed up your application by optimizing the response? 👀
 
 Laravel Resource Reducer helps you to optimize every API request by:
 
@@ -18,17 +18,19 @@ Laravel Resource Reducer helps you to optimize every API request by:
 
 A simple yet super effective method to skyrocketing your API responding times 🥰
 
-> If you know about GraphQL query, in order to query for data, we need to define which _fields_ we want to get
-in our context.
+> If you know about GraphQL, To query for data, we need to define which _fields_ we want to retrieve.
+> Laravel Resource Reducer is heavily inspired from GraphQL approach. ❤️
 
 ## Supports
 - Laravel 10+
 - PHP 8.2+
 
 ### Compatibility
-- Single Model ✅
-- Collection of Models ✅
-- Pagination ✅ (🟡 you need to use `Resource::collection` for the time being)
+- Single Eloquent Model ✅
+- Collection of Eloquent Models ✅
+- Pagination ✅ (🟡 we have to use `Resource::collection` for the time being)
+- (Planned) Collection of Arrays
+- (Planned) Collection of Objects
 
 ## Installation
 
